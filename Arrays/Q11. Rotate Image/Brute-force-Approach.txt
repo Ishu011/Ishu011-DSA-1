@@ -1,0 +1,21 @@
+# Brute-force Approach:
+
+## Approach:
+In the brute-force approach, we create a new matrix to store the rotated image. We iterate through the original matrix and place each element in the correct position in the new matrix.
+
+1. Create a new matrix of the same size.
+2. Copy values from the original matrix to the new matrix such that each element matrix[i][j] from the original matrix is moved to the position rotated[j][n-i-1] in the new matrix, where n is the size of the matrix.
+3. Return the new matrix as the rotated result.
+
+## Explanation of the Brute-force Approach:
+- **New matrix creation:** A new matrix `rotated` is created to store the rotated result.
+- **Placing elements:** We loop through the original matrix and for each element, we calculate its new position in the rotated matrix.
+- **Return result:** Finally, we return the rotated matrix.
+
+## Time Complexity:
+- **Matrix traversal:** We traverse all elements of the matrix once, making it O(n^2).
+- **Matrix assignment:** For each element, we assign its value in the new matrix, which takes O(1).
+- **Total Time Complexity:** O(n^2)
+
+## Space Complexity:
+- **New matrix:** We create an extra matrix of size n×n, so the space complexity is O(n^2).
