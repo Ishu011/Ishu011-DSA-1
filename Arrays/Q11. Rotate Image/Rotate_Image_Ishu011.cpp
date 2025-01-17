@@ -1,10 +1,10 @@
 //1) BRUTE-FORCE-APPROACH
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 vector<vector<int>> rotate(vector<vector<int>>& matrix) {
     int n = matrix.size();
-    // Create a new matrix to store rotated result
+    // Create a new matrix to store the rotated result
     vector<vector<int>> rotated(n, vector<int>(n, 0)); 
     
     // Loop through the original matrix and place elements in the rotated matrix
@@ -35,7 +35,7 @@ int main() {
 
 
 //2) OPTIMAL-APPROACH
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 void rotate(vector<vector<int>>& matrix) {
